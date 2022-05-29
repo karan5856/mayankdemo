@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style type="text/css">
+		h1{
+			color: blue;
+			background-color: gold;
+		}
+
+
+		input:focus{
+			background-color: rgb(244, 244, 248);
+			
+		}
+		.error{
+			color: red;
+			width: 100%;
+			margin-top: 10px;
+		}
+	</style>
+</style>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>formvalidatejquery</title>
+	
+</head>
+
+<body text="black" bgcolor="silver">
+	
+	
+	<h1>registration form</h1>
+
+
+<form id="frm" action="form submission.html" target="_blank"  autocomplete="on" method="get/post">
+	<fieldset>
+
+		<legend><strong>fill your info</strong></legend>
+	
+	<label>firstname :</label> <input class="class input" required type ="text" id="firstname" name="firstname"  autofocus required>
+	<br><br>
+	<label>lastname :</label> <input class="class input" required type="text" id="lastname" name="lastname" ><br><br>
+	<label>email :</label> <input class="input class" required type="email" id="email" name="email"> <br><br>
+	<label>password :</label> <input class="input class" required type="password" id="pass"  name="password" placeholder="select password"><br><br>
+	<label>GENDER :</label> 
+	<input type="radio" name="male" value="male" id="male">male
+	<input type="radio" name="male" value="female" id="female">female
+	<input type="radio" name="male" value="others" id="others"> others
+	<br><br>
+	<label>D.O.B :</label>
+	<input type="date" name="birthdate" id="birthdate" value="birthdate">
+	<br><br>
+
+	<label>availablity</label>
+	<select name="availablity" id="availablity">
+	<option value="monday">monday</option>
+	<option value="tuesday">tuesday</option>
+	<option value="wed">wed</option>
+</select> <br><br>
+<label>tel :</label> 
+<input type="tel" name="telephone" id="telephone" placeholder="123-456-7899" pattern="[1-10](3)-[1-10](3)-[1-10](4)">
+<br><br>
+<label>insert file</label>
+<input type="file" name="insert file">
+<br><br>
+<input type="reset" name="reset">
+<input type="submit" name="submit" >
+
+<button> save</button>
+
+	</fieldset>
+</form>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.4/jquery.validate.min.js"></script>
+
+    <script src="registration.js"></script>
+   
+
+
+</body>
+</html>
